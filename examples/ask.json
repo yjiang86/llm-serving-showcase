@@ -1,0 +1,6 @@
+{
+  "prompt": "Explain input/output token-budget accounting for a long-context request.",
+  "max_output_tokens": 256,
+  "thinking": false,
+  "stream": true
+}

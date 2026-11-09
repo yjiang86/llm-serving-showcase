@@ -1,0 +1,101 @@
+{
+  "sourcePath": "canonical-baseline/server_sglang_anthropic.mjs",
+  "source_sha256": "828ce24ed6bf6ff2b31f299a7ba2e328d9b4ebba6ff47810772d76ecdb16fbac",
+  "scope": "EXACT_SOURCE_HANDLER_WITH_SYNTHETIC_HTTP_BOUNDARY_NO_NETWORK_NO_MODEL_NO_REAL_SDK",
+  "tests": 12,
+  "passed": 4,
+  "failed": 8,
+  "results": [
+    {
+      "name": "complete_success",
+      "expected": "completed",
+      "observed": "completed",
+      "partial_text_returned": true,
+      "pass": true
+    },
+    {
+      "name": "truncated_after_text",
+      "expected": "error",
+      "observed": "completed",
+      "partial_text_returned": true,
+      "pass": false
+    },
+    {
+      "name": "upstream_error_before_start",
+      "expected": "error",
+      "observed": "completed",
+      "partial_text_returned": false,
+      "pass": false
+    },
+    {
+      "name": "upstream_error_after_text",
+      "expected": "error",
+      "observed": "completed",
+      "partial_text_returned": true,
+      "pass": false
+    },
+    {
+      "name": "empty_http_200",
+      "expected": "error",
+      "observed": "completed",
+      "partial_text_returned": false,
+      "pass": false
+    },
+    {
+      "name": "start_only_eof",
+      "expected": "error",
+      "observed": "completed",
+      "partial_text_returned": false,
+      "pass": false
+    },
+    {
+      "name": "stop_without_start",
+      "expected": "error",
+      "observed": "completed",
+      "partial_text_returned": false,
+      "pass": false
+    },
+    {
+      "name": "duplicate_start",
+      "expected": "error",
+      "observed": "completed",
+      "partial_text_returned": true,
+      "pass": false
+    },
+    {
+      "name": "data_after_terminal",
+      "expected": "error",
+      "observed": "completed",
+      "partial_text_returned": false,
+      "pass": false
+    },
+    {
+      "name": "malformed_json",
+      "expected": "error",
+      "observed": "error",
+      "partial_text_returned": false,
+      "pass": true
+    },
+    {
+      "name": "complete_success_byte_chunks",
+      "expected": "completed",
+      "observed": "completed",
+      "partial_text_returned": true,
+      "pass": true
+    },
+    {
+      "name": "http_503",
+      "expected": "error",
+      "observed": "error",
+      "partial_text_returned": false,
+      "pass": true
+    }
+  ],
+  "export_lineage": {
+    "original_sha256": "ba692e7681d0c88acc0913ea938c947d39bb471d84dab09dda9b7744b816011c",
+    "redacted_fields": [
+      "sourcePath"
+    ],
+    "all_case_expectations_and_results_preserved": true
+  }
+}

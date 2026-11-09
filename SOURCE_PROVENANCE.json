@@ -1,0 +1,58 @@
+{
+  "schema": "private_engineering_sample_provenance_v1",
+  "source_canonical_head": "9d480615a39f43ffee1826cce016c10c9b3710fa",
+  "original_git_history_included": false,
+  "candidate": {
+    "logical_source": "candidate_server_sglang_anthropic_20260930.mjs",
+    "bytes": 10542,
+    "sha256": "426d3d2d93f3a8888b5a35916068d70602d23fe6d395a9f210aed25ed4affe3b",
+    "owner_disposition": "PREPARATION_ACCEPTED_NOT_APPLIED",
+    "source_transformation": "NONE_EXACT_BYTES"
+  },
+  "manifest_inputs": [
+    {
+      "logical_source": "tools/codex_glm52_a100/codex_glm52_mcp/package.json",
+      "source_head": "9d480615a39f43ffee1826cce016c10c9b3710fa",
+      "bytes": 353,
+      "sha256": "4b840ad2613cf4d26043cab055968c7fc7166b23d2c3f4b4b54f0867d2000990"
+    },
+    {
+      "logical_source": "tools/codex_glm52_a100/codex_glm52_mcp/package-lock.json",
+      "source_head": "9d480615a39f43ffee1826cce016c10c9b3710fa",
+      "bytes": 41328,
+      "sha256": "9feaefca19a0b833b4f0b425656099a106907b22049db71fe3dd7982a6288713"
+    }
+  ],
+  "fixture": {
+    "original_sha256": "a50809980b7dd913684dab045a15ee2f81a9b4ca8f5d1b39c4fa876bc9a3a3a7",
+    "transformation": "Portable default source path and default candidate SHA only; original twelve cases and complete oracle suffix byte-identical"
+  },
+  "compatibility_fixture": {
+    "original_sha256": "1100deefec4803ab2b8f736e5b23c5f124f5a915ed41791c7967479ca6d81cb0",
+    "transformation": "NONE_EXACT_BYTES"
+  },
+  "package_manifest_change": "scripts.start selects included native Anthropic source; dependency versions/integrities unchanged",
+  "historical_primary_receipt_pins": [
+    {
+      "logical_name": "bridge_stream_baseline_20260930.json",
+      "bytes": 2379,
+      "sha256": "ba692e7681d0c88acc0913ea938c947d39bb471d84dab09dda9b7744b816011c"
+    },
+    {
+      "logical_name": "bridge_stream_candidate_tests_20260930.json",
+      "bytes": 2310,
+      "sha256": "4a734123c942799c02d063420a48633bcc9c7af219c91d4ed5c904b7634f0699"
+    },
+    {
+      "logical_name": "bridge_stream_compat_tests_20260930.json",
+      "bytes": 1398,
+      "sha256": "cf34af8f2b3d2b08038470621946ac6341686ab714197c485a2fc3eb588c0db6"
+    },
+    {
+      "logical_name": "bridge_stream_disposition_20260930.md",
+      "bytes": 5185,
+      "sha256": "8722f870ff87f72971d2e71b825602163c294d75b69171aa8833ab61719cd91a"
+    }
+  ],
+  "raw_private_evidence_included": false
+}

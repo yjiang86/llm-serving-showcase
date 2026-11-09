@@ -1,0 +1,52 @@
+{
+  "sourcePath": "client/server_sglang_anthropic.mjs",
+  "source_sha256": "426d3d2d93f3a8888b5a35916068d70602d23fe6d395a9f210aed25ed4affe3b",
+  "scope": "EXACT_SOURCE_HANDLER_WITH_SYNTHETIC_HTTP_BOUNDARY_NO_NETWORK_NO_MODEL_NO_REAL_SDK",
+  "tests": 6,
+  "passed": 6,
+  "failed": 0,
+  "results": [
+    {
+      "name": "ping_and_unknown_compatibility",
+      "expected": "completed",
+      "observed": "completed",
+      "partial_text_returned": true,
+      "pass": true
+    },
+    {
+      "name": "multibyte_utf8_single_bytes",
+      "expected": "completed",
+      "observed": "completed",
+      "partial_text_returned": false,
+      "pass": true
+    },
+    {
+      "name": "crlf_event_delimiters",
+      "expected": "completed",
+      "observed": "completed",
+      "partial_text_returned": true,
+      "pass": true
+    },
+    {
+      "name": "truncated_one_byte_chunks",
+      "expected": "error",
+      "observed": "error",
+      "partial_text_returned": false,
+      "pass": true
+    },
+    {
+      "name": "error_one_byte_chunks",
+      "expected": "error",
+      "observed": "error",
+      "partial_text_returned": false,
+      "pass": true
+    },
+    {
+      "name": "terminal_without_stop_reason",
+      "expected": "error",
+      "observed": "error",
+      "partial_text_returned": false,
+      "pass": true
+    }
+  ]
+}
