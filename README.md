@@ -20,6 +20,16 @@ documentation and existing offline checks. Its owner disposition is
 [Architecture](docs/architecture.md) · [Evidence and limits](docs/evidence-and-limits.md)
 · [Validation](VALIDATION.md) · [Application bullets](APPLICATION_BULLETS.md)
 
+## Kimi K3 four-node H100 acceptance
+
+On 2026-11-20 one bounded evaluation run of Kimi K3 on four H100 nodes (32
+GPUs, SGLang, native Anthropic Messages) passed its frozen acceptance
+contract and cleanup. A 131,072-token total context was served, and 16, 80
+and 320 requests at concurrency 1, 16 and 64 all succeeded. The test service
+was stopped afterwards. Measurements, two preserved earlier failures and the
+limits of the claim are in
+[docs/kimi-k3-h100-acceptance.md](docs/kimi-k3-h100-acceptance.md).
+
 ## Run the offline checks
 
 Requires Node.js 20 or later. These checks use built-in Node modules, a mocked
@@ -70,7 +80,7 @@ ownership is not claimed.
 ## Contents and exclusions
 
 This snapshot contains selected client source, dependency manifests, existing
-offline checks and sanitized evidence. It contains no model weights, container
+offline checks, sanitized evidence and a sanitized acceptance summary. It contains no model weights, container
 images, scheduler scripts, host configuration, raw chats, review packages,
 credentials or original repository history.
 

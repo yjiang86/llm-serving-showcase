@@ -54,5 +54,36 @@
       "sha256": "8722f870ff87f72971d2e71b825602163c294d75b69171aa8833ab61719cd91a"
     }
   ],
+  "kimi_k3_acceptance_summary": {
+    "logical_source": "docs/history/kimi_k3_h100_acceptance_history.md",
+    "source_head": "b99bc010fed21db99a31a742a8f4bb0b2f1fa705",
+    "bytes": 6462,
+    "sha256": "c1de175f11fd4b7f4296b899a8f7c7fb1a3c6ff414cc51073f9b5b143f7d2512",
+    "exported_as": "docs/kimi-k3-h100-acceptance.md",
+    "source_transformation": "REWRITTEN_SUMMARY_SCHEDULER_JOB_IDS_AND_EXACT_TIMESTAMPS_OMITTED_FIGURES_UNCHANGED",
+    "verified_against_retained_receipts_utc_date": "2026-11-20",
+    "receipt_pins": [
+      {
+        "logical_name": "kimi_k3_acceptance_receipt.json",
+        "bytes": 8520,
+        "sha256": "032000f4c5abb2cd03798da9886a28d38d1f3a09b383fc7f0035a7cd9915d354"
+      },
+      {
+        "logical_name": "kimi_k3_cleanup_receipt.json",
+        "bytes": 867,
+        "sha256": "b527578d78d40e8aa4ccc7977defe6d971f4abaacbe18db2931f19b7fa149c52"
+      },
+      {
+        "logical_name": "kimi_k3_launch_manifest.json",
+        "bytes": 6287,
+        "sha256": "2a262cf93f14bbdf1b0237eac8c1f30bff4ea128c409202cece0f5f0e7075f40"
+      },
+      {
+        "logical_name": "kimi_k3_completion_audit.json",
+        "bytes": 16291,
+        "sha256": "46006a737bd3873a24d228a3e7d73956e454191957a40b65b0c2ceb942d26a2f"
+      }
+    ]
+  },
   "raw_private_evidence_included": false
 }

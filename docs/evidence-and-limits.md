@@ -36,9 +36,19 @@ transport; they do not call a model, open a listener or access a real secret.
 
 The original repository retains a curated A100/H100 deployment history and a
 source manifest. Raw operational artifacts are deliberately outside this
-showcase. Quantitative historical context/throughput claims and historical agent-loop
+showcase. Quantitative GLM-5.2 context/throughput claims and historical agent-loop
 outcomes are omitted from the application bullets because their original run
 artifacts were not located and rehashed during this delivery. No current online-service claim is made.
+
+## Kimi K3 acceptance run
+
+[kimi-k3-h100-acceptance.md](kimi-k3-h100-acceptance.md) is the exception to
+the omission above. Its figures were checked on 2026-11-20 against the
+retained receipts of the passing run, which were captured complete and
+rehashed, and its resource figures were recomputed from the raw per-rank
+samples. It records one bounded evaluation job whose service was stopped by
+cleanup. It did not use the client in this showcase and does not establish a
+current online service.
 
 ## Remaining limitations
 

@@ -21,5 +21,12 @@ rejects real credential-file access. It creates no listener and contacts no
 network or model. Each case asserts one synthetic request and no automatic
 retry. These results do not establish a current online service.
 
+The table above concerns the exported GLM-5.2 client only. The Kimi K3
+acceptance run summarized in
+[docs/kimi-k3-h100-acceptance.md](docs/kimi-k3-h100-acceptance.md) was a
+separate live GPU run that did not use this client. Its summary was checked
+against retained receipts on 2026-11-20; it cannot be re-run from this
+repository.
+
 Re-run the commands in README without an output-file argument to print new
 results while preserving the exported evidence files.
